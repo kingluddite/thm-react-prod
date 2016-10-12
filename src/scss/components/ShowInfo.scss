@@ -1,0 +1,34 @@
+.flexbox-container {
+    .show-date {
+        // font-family: 'Mr Bedfort', cursive;
+        font-family: 'Vollkorn', cursive;
+        font-size  : 2.5rem;
+        color      : $white;
+    }
+
+    .show-time {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size  : 2rem;
+    }
+}
+@media all and (min-width: 600px) {}
+/* Large screens */
+@media all and (min-width: 800px) {
+    .show-info {
+        flex: 16;
+
+        .show-date {
+            font-size  : 4rem;
+            font-weight: normal;
+            text-align : center;
+            margin-top : 1rem;
+        }
+
+        .show-time {
+            margin-top: -4rem;
+            // align-self: center;
+            font-size : 2.5rem;
+            text-align: center;
+        }
+    }
+}

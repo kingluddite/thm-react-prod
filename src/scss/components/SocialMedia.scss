@@ -1,0 +1,30 @@
+.flexbox-container {
+    .social-media-container {
+        display: inline-block;
+        width  : 60%;
+
+        .social-media {
+            display        : flex;
+            flex-flow      : row nowrap;
+            justify-content: space-around;
+            align-items    : center;
+            height         : 3rem;
+            width          : 100%;
+
+            li a i:hover {
+                opacity: 1;
+                color  : $white;
+            }
+
+            li {
+                list-style-type: none;
+            }
+
+            li a i {
+                opacity   : 0.7;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+
+    }
+}

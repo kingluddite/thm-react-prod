@@ -1,0 +1,22 @@
+.flexbox-container {
+    .venue {
+        line-height   : 0.5;
+        margin-bottom : 2rem;
+        text-transform: uppercase;
+    }
+}
+@media all and (min-width: 600px) {}
+/* Large screens */
+@media all and (min-width: 800px) {
+    .flexbox-container {
+        .venue {
+            margin-right: 2rem;
+            text-align  : right;
+            // font-family : 'Gafata', sans-serif;
+            line-height : 0.5;
+            // align-self  : center;
+            flex-grow   : 2;
+            font-size   : 1.2rem;
+        }
+    }
+}

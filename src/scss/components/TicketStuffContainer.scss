@@ -1,0 +1,74 @@
+@media all and (min-width: 600px) {}
+/* Large screens */
+@media all and (min-width: 800px) {
+    .flexbox-container {
+        .ticket-stuff-container {
+            $red   : #E1332D;
+            $white : #fff;
+            display: flex;
+            width  : 100%;
+            //default button
+            .btn {
+                color          : $gold;
+                cursor         : pointer;
+                display        : block;
+                font-size      : 16px;
+                font-weight    : 400;
+                line-height    : 45px;
+                margin         : 0 auto 2em;
+                max-width      : 160px;
+                position       : relative;
+                text-decoration: none;
+                text-transform : uppercase;
+                vertical-align : middle;
+                width          : 100%;
+            }
+            /////////////////////////////
+            //button-4
+            ///////////////////////////
+            .btn-depth {
+                border  : 1px solid $white;
+                overflow: hidden;
+                position: relative;
+
+                span {
+                    z-index: 20;
+                }
+
+                &:after {
+                    background: $white;
+                    content   : "";
+                    height    : 155px;
+                    left      : -75px;
+                    opacity   : 0.2;
+                    position  : absolute;
+                    top       : -50px;
+                    transform : rotate(35deg);
+                    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+                    width     : 50px;
+                    z-index   : -10;
+                }
+            }
+
+            .btn-depth:hover {
+                &:after {
+                    left      : 120%;
+                    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+                }
+            }
+
+        }
+
+        .buy-ticket {
+            // display: block;
+            width      : 50%;
+            padding-top: 2rem;
+        }
+
+        .eventbrite {
+            padding-top: 2rem;
+            width      : 50%;
+        }
+    }
+
+}

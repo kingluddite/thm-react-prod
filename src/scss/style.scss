@@ -1,0 +1,105 @@
+@import 'variables';
+@import 'normalize';
+@import 'defaults';
+@import 'external-fonts';
+@import 'components/Countdown';
+@import 'components/SocialMedia';
+@import 'components/ShowInfo';
+@import 'components/Venue';
+@import 'components/TicketStuffContainer.scss';
+
+.flexbox-container {
+    max-width: 1200px;
+    margin   : 0 auto;
+    display  : -ms-flex;
+    display  : -webkit-flex;
+    display  : flex;
+    // height   : 300px;
+    flex-flow: row wrap;
+    color    : $gold;
+
+    .footer,
+    .header,
+    .main,
+    .nav {
+        flex      : 1 100%;
+        text-align: center;
+    }
+
+    .main {
+        h2 {
+            color: $white;
+        }
+
+        .episode-title {
+            font-family: 'Open Sans Condensed', sans-serif;
+            // text-transform: uppercase;
+            font-size  : 1.2rem;
+        }
+    }
+
+    .thm-productions {
+        color  : $gray;
+        opacity: 0.4;
+    }
+
+}
+@media all and (min-width: 600px) {}
+/* Large screens */
+@media all and (min-width: 800px) {
+    .flexbox-container {
+        .main {
+            display  : flex;
+            flex-flow: row wrap;
+
+            .episode-title,
+            .event-description,
+            h2 {
+                width      : 100%;
+                line-height: 1;
+            }
+
+            .event-description {
+                font-size: 1.5rem;
+                color    : $white;
+                opacity  : 0.7;
+            }
+
+            .episode-title {
+                font-size : 3rem;
+                margin    : 0;
+                color     : $white;
+                font-style: italic;
+            }
+
+            .episode-summary {
+                font-size : 1.1rem;
+                margin    : 1rem auto;
+                width     : 70%;
+                font-style: italic;
+                color     : $white;
+                opacity   : 0.7;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        .tagline {
+            font-size  : 2.5em;
+            font-family: 'Gafata', sans-serif;
+            font-style : italic;
+            margin     : 0 auto;
+        }
+
+    }
+
+    .flexbox-container > div {
+        padding: 10px;
+    }
+
+    .flexbox-container > div:first-child {
+        margin-right: 20px;
+    }
+}
